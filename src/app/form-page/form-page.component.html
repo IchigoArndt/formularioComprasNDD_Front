@@ -1,0 +1,70 @@
+<body class="body">
+<div class="container">
+        <h1>Pesquisa de Satisfação do time de compras</h1>
+        <div class="questions-container">		 
+            <form [formGroup]="formTeste">
+                <div class="question">
+                    <p>1. <b>Comunicação:</b> A equipe de compras fornece informações claras sobre prazos de entrega, disponibilidade de produtos e outros detalhes relevantes?</p>
+                    <div class="options">
+                        <input formControlName="pergunta1" type="radio" class="form-check-input"  value="1"> Mandou muito bem<br>
+                        <input formControlName="pergunta1" type="radio" class="form-check-input"  value="2"> Mandou bem<br>
+                        <input formControlName="pergunta1" type="radio" class="form-check-input"  value="3"> Está no caminho<br>
+                        <input formControlName="pergunta1" type="radio" class="form-check-input"  value="4"> Precisa melhorar<br>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>2. <b>Responsividade:</b> A equipe de compras responde prontamente a solicitações classificadas como urgentes, considerando a capacidade de entrega?</p>
+                    <div class="options">
+                        <input formControlName="pergunta2" type="radio" class="form-check-input"  value="1"> Mandou muito bem <br>
+                        <input formControlName="pergunta2" type="radio" class="form-check-input"  value="2"> Mandou bem<br>
+                        <input formControlName="pergunta2" type="radio" class="form-check-input"  value="3"> Está no caminho<br>
+                        <input formControlName="pergunta2" type="radio" class="form-check-input"  value="4"> Precisa melhorar<br>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>3. <b>Eficiência do Processo:</b> Como você avalia a eficiência do processo de compras, levando em consideração aos prazos de atendimento e solicitação?  </p>
+                    <div class="options">
+                        <input formControlName="pergunta3" type="radio" class="form-check-input"  value="1"> Mandou muito bem <br>
+                        <input formControlName="pergunta3" type="radio" class="form-check-input"  value="2"> Mandou bem<br>
+                        <input formControlName="pergunta3" type="radio" class="form-check-input"  value="3"> Está no caminho<br>
+                        <input formControlName="pergunta3" type="radio" class="form-check-input"  value="4"> Precisa melhorar<br>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>4. <b>Gestão de Adversidades:</b> A equipe lida com problemas ou desafios durante o processo de compra, a fim de ter um fluxo eficaz e sem impacto significativo nas operações?</p>
+                    <div class="options">
+                        <input formControlName="pergunta4" type="radio" class="form-check-input"  value="1"> Mandou muito bem <br>
+                        <input formControlName="pergunta4" type="radio" class="form-check-input"  value="2"> Mandou bem<br>
+                        <input formControlName="pergunta4" type="radio" class="form-check-input"  value="3"> Está no caminho<br>
+                        <input formControlName="pergunta4" type="radio" class="form-check-input"  value="4"> Precisa melhorar<br>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>5. <b>Inovação e Melhoria Contínua:</b> A equipe de compras busca constantemente maneiras de melhorar seus processos?</p>
+                    <div class="options">
+                        <input  formControlName="pergunta5" type="radio" class="form-check-input"  value="1"> Mandou muito bem <br>
+                        <input  formControlName="pergunta5" type="radio" class="form-check-input"  value="2"> Mandou bem<br>
+                        <input  formControlName="pergunta5" type="radio" class="form-check-input"  value="3"> Está no caminho<br>
+                        <input  formControlName="pergunta5" type="radio" class="form-check-input"  value="4"> Precisa melhorar<br>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>6. <b>Satisfação Geral:</b> Como você avaliaria sua satisfação geral com os serviços prestados pela equipe de compras?</p>
+                    <div class="options">
+                        <input formControlName="pergunta6" type="radio" class="form-check-input"  value="1"> Mandou muito bem <br>
+                        <input formControlName="pergunta6" type="radio" class="form-check-input"  value="2"> Mandou bem<br>
+                        <input formControlName="pergunta6" type="radio" class="form-check-input"  value="3"> Está no caminho<br>
+                        <input formControlName="pergunta6" type="radio" class="form-check-input"  value="4"> Precisa melhorar<br>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>5. Deixe um comentário adicional:</p>
+                    <div class="options">
+                        <textarea class="form-control" name="q7" rows="4" cols="50" formControlName="sugestao"></textarea>
+                    </div>
+                </div>			
+                <button class="btn btn-primary" (click)="onSubmit()" data-button>Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>

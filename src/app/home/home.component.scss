@@ -1,0 +1,55 @@
+.body-home {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://systems.e-datacenter.nddigital.com.br/CLM/assets/images/backgroundtelainicial.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff; /* Cor do texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    
+}
+
+
+
+.conteudo h1 {
+color: #000000; /* Cor preta */
+font-weight: bold; /* Negrito */
+font-size: 50px; /* Ajuste o tamanho da fonte conforme necessário */
+padding-top: 60px; /* Ajuste conforme necessário */
+margin-left: 50px; /* Adicione uma margem à esquerda conforme necessário */
+}
+
+.textoSuperiorEsquerdo {
+    position: absolute;
+    top: 180px;
+    left: 60px;
+    font-size: 18px; /* Aumentei o tamanho da fonte */
+    font-weight: bold; /* Coloquei em negrito */
+    color: #000000; /* Cor do texto informativo */
+    
+}
+
+.botaoIniciar {
+    position: absolute;
+    bottom: 130px; /* Ajuste a distância do botão em relação ao rodapé */
+    left: 160px;
+    background-color: #5700FF;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 32px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.rodape {
+    background-color: #333; /* Cor de fundo do rodapé */
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+}
